@@ -1,0 +1,99 @@
+/* Containers */
+
+.container {
+    width: 90%;
+    /* max-width: 1750px;
+    min-width: 1400px; */
+}
+              
+.image.featured {
+    display: block;
+}
+
+.image.featured img {
+    display: block;
+}
+
+
+/* Header */
+#header {
+    background: #fff;
+    color: inherit;
+    font-size: 0.8em;
+    width: 100%;
+}
+
+#header h1 {
+    font-weight: 900;
+}
+
+#header h1 span {
+    font-weight: 300;
+}
+
+
+#banner {
+    color: #fff;
+    text-align: center;
+}
+
+#banner .inner {
+    color: #f00;
+    display: inline-block;
+    text-align: center;
+}
+
+#banner .inner header {
+    display: inline-block;
+}
+
+#banner .inner header h2 {
+    font-size: 2.5em;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+}
+
+#banner .inner p {
+    letter-spacing: 0.1em;
+}
+
+#banner .inner p a {
+    color: inherit;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#header nav ul li {
+    display: inline-block;
+}
+
+#header nav ul li > ul {
+    display: none;
+}
+
+#header nav ul li a {
+    color: inherit;
+    display: inline-block;
+    line-height: 1em;
+    text-decoration: none;
+}
+
+/* Wrapper */
+
+.wrapper {
+    margin-bottom: 5em;
+    padding: 5em;
+}
+
+.wrapper.style1 {
+    padding: 0;
+}
+
+#header nav ul li .button {
+    font-size: 1em;
+    min-width: 0;
+    width: auto;
+}
+
+/* Main */
+   
