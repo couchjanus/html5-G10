@@ -4,8 +4,31 @@
 		<title>Peculiar Shopaholic Site</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="./favicon.ico">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/main01.css" />
+
+		<style>
+			/* column widths */
+			.col-1  { width: 8.33333%; }
+			.col-2  { width: 16.66667%; }
+			.col-3  { width: 25%; }
+			.col-4  { width: 33.33333%; }
+			.col-5  { width: 41.66667%; }
+			.col-6  { width: 50%; }
+			.col-7  { width: 58.33333%; }
+			.col-8  { width: 66.66667%; }
+			.col-9  { width: 75%; }
+			.col-10 { width: 83.33333%; }
+			.col-11 { width: 91.66667%; }
+			.col-12 { width: 100%; }
+
+			/*
+			.\34 u {
+				background: hotpink;
+			}
+			*/
+		</style>
 	</head>
 	<body class="index">
 		<div id="page-wrapper">
@@ -15,7 +38,7 @@
 					<h1 id="logo"><a href="index.html">Peculiar <span>Shopaholic</span></a></h1>
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="index.html">Welcome</a></li>
+							<li class="current"><a href="index.html"> Welcome</a></li>
 							<li class="submenu">
 								<a href="#">Products</a>
 								<ul>
@@ -56,9 +79,9 @@
 				<article id="main">
 
 					<header class="special container">
-						<span class="icon fa-bar-chart-o"></span>
-						<h2>I decided to give it a really creative name.</h2>
-						<p>Turns out <strong>Peculiar Shopaholic</strong> was the best I could come up with. Anyway, lame name aside,
+						<span class="icon fa fa-bar-chart-o"></span>
+						<h2>I decided to give &nbsp; &#x31; &#xA0; it a really creative name.</h2>
+						<p>Turns out <strong> € Peculiar Shopaholic  &#x20AC;</strong> was the best I could come up with. Anyway, lame name aside,
 						<br />
 						it's minimally designed, fully responsive, built on HTML5/CSS3/<strong>skel</strong>,
 						and, like all my stuff,
@@ -69,7 +92,7 @@
 					<!-- One -->
 						<section class="wrapper style2 container special-alt">
 							<div class="row 50%">
-								<div class="8u 12u(narrower)">
+								<div class="inner 8u 12u(narrower)">
 
 									<header>
 										<h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
@@ -85,12 +108,12 @@
 								<div class="4u 12u(narrower) important(narrower)">
 
 									<ul class="featured-icons">
-										<li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span></li>
-										<li><span class="icon fa-volume-up"><span class="label">Feature 2</span></span></li>
-										<li><span class="icon fa-laptop"><span class="label">Feature 3</span></span></li>
-										<li><span class="icon fa-inbox"><span class="label">Feature 4</span></span></li>
-										<li><span class="icon fa-lock"><span class="label">Feature 5</span></span></li>
-										<li><span class="icon fa-cog"><span class="label">Feature 6</span></span></li>
+										<li><span class="icon fa fa-clock-o"><span class="label">Feature 1</span></span></li>
+										<li><span class="icon fa fa-volume-up"><span class="label">Feature 2</span></span></li>
+										<li><span class="icon fa fa-laptop"><span class="label">Feature 3</span></span></li>
+										<li><span class="icon fa fa-inbox"><span class="label">Feature 4</span></span></li>
+										<li><span class="icon fa  fa-lock"><span class="label">Feature 5</span></span></li>
+										<li><span class="icon fa fa-cog"><span class="label">Feature 6</span></span></li>
 									</ul>
 
 								</div>
@@ -100,10 +123,10 @@
 					<!-- Two -->
 						<section class="wrapper style1 container special">
 							<div class="row">
-								<div class="4u 12u(narrower)">
+								<div class="4u 12u(narrower) col-4">
 
 									<section>
-										<span class="icon featured fa-check"></span>
+										<span class="icon featured fa fa-check"></span>
 										<header>
 											<h3>This is Something</h3>
 										</header>
@@ -111,10 +134,10 @@
 									</section>
 
 								</div>
-								<div class="4u 12u(narrower)">
+								<div class="4u 12u(narrower) col-4">
 
 									<section>
-										<span class="icon featured fa-check"></span>
+										<span class="icon featured fa fa-check"></span>
 										<header>
 											<h3>Also Something</h3>
 										</header>
@@ -122,10 +145,10 @@
 									</section>
 
 								</div>
-								<div class="4u 12u(narrower)">
+								<div class="4u 12u(narrower) col-4">
 
 									<section>
-										<span class="icon featured fa-check"></span>
+										<span class="icon featured fa fa-check"></span>
 										<header>
 											<h3>Probably Something</h3>
 										</header>
@@ -135,7 +158,10 @@
 								</div>
 							</div>
 						</section>
+                        
+                        <section class="bg bg1">
 
+                        </section>
 					<!-- Three -->
 						<section class="wrapper style3 container special">
 
@@ -190,6 +216,7 @@
 									</section>
 
 								</div>
+								
 							</div>
 
 							<footer class="major">
@@ -201,6 +228,9 @@
 						</section>
 
 				</article>
+                <section class="bg bg2">
+
+                </section>
 
 			<!-- order -->
 				<section id="order">
@@ -222,11 +252,11 @@
 				<footer id="footer">
 
 					<ul class="icons">
-						<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
-						<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#"><i class="icon circle fa fa-twitter" aria-hidden="true"><span class="label">Twitter</span></i></a></li>
+						<li><a href="#"><i class="icon circle fa fa-facebook" aria-hidden="true"><span class="label">Facebook</span></i></a></li>
+						<li><a href="#"><i class="icon circle fa fa-google-plus" aria-hidden="true"><span class="label">Google+</span></i></a></li>
+						<li><a href="#"><i class="icon circle fa fa-github" aria-hidden="true"><span class="label">Github</span></i></a></li>
+						<li><a href="#"><i class="icon circle fa fa-dribbble" aria-hidden="true"><span class="label">Dribbble</span></i></a></li>
 					</ul>
 
 					<ul class="copyright">
