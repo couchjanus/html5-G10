@@ -9,25 +9,38 @@
 		<link rel="stylesheet" href="assets/css/main01.css" />
 
 		<style>
-			/* column widths */
-			.col-1  { width: 8.33333%; }
-			.col-2  { width: 16.66667%; }
-			.col-3  { width: 25%; }
-			.col-4  { width: 33.33333%; }
-			.col-5  { width: 41.66667%; }
-			.col-6  { width: 50%; }
-			.col-7  { width: 58.33333%; }
-			.col-8  { width: 66.66667%; }
-			.col-9  { width: 75%; }
-			.col-10 { width: 83.33333%; }
-			.col-11 { width: 91.66667%; }
-			.col-12 { width: 100%; }
 
-			/*
-			.\34 u {
-				background: hotpink;
-			}
-			*/
+		ul.odd > li:nth-child(odd) {
+			color: red;
+		}
+
+		ul.even > li:nth-child(even) {
+			color: green;
+		}
+
+		ul.number > li:nth-child(3) {
+			color: rgb(113, 0, 128);
+		}
+
+		ul.expression > li:nth-child(3n+1) {
+			color: rgb(0, 113, 128);
+		}
+
+		/*
+	    ul.expression > li:nth-child(n+4) {
+			color: yellow; 
+		}
+		
+		ul.expression > li:nth-child(-n+5) {
+			color: blue;
+		}
+
+		*/
+
+
+
+		
+			
 		</style>
 	</head>
 	<body class="index">
@@ -41,7 +54,7 @@
 							<li class="current"><a href="index.html"> Welcome</a></li>
 							<li class="submenu">
 								<a href="#">Products</a>
-								<ul>
+								<ul class=''>
 									<li><a href="cats/index.html">Cats</a></li>
 									<li><a href="dog/index.html">Dogs</a></li>
 									<li><a href="food/index.html">Food</a></li>
@@ -80,8 +93,8 @@
 
 					<header class="special container">
 						<span class="icon fa fa-bar-chart-o"></span>
-						<h2>I decided to give &nbsp; &#x31; &#xA0; it a really creative name.</h2>
-						<p>Turns out <strong> € Peculiar Shopaholic  &#x20AC;</strong> was the best I could come up with. Anyway, lame name aside,
+						<h2>I decided to give it a really creative name.</h2>
+						<p>Turns out <strong>Peculiar Shopaholic</strong> was the best I could come up with. Anyway, lame name aside,
 						<br />
 						it's minimally designed, fully responsive, built on HTML5/CSS3/<strong>skel</strong>,
 						and, like all my stuff,
@@ -123,7 +136,7 @@
 					<!-- Two -->
 						<section class="wrapper style1 container special">
 							<div class="row">
-								<div class="4u 12u(narrower) col-4">
+								<div class="4u 12u(narrower)">
 
 									<section>
 										<span class="icon featured fa fa-check"></span>
@@ -134,7 +147,7 @@
 									</section>
 
 								</div>
-								<div class="4u 12u(narrower) col-4">
+								<div class="4u 12u(narrower)">
 
 									<section>
 										<span class="icon featured fa fa-check"></span>
@@ -145,7 +158,7 @@
 									</section>
 
 								</div>
-								<div class="4u 12u(narrower) col-4">
+								<div class="4u 12u(narrower)">
 
 									<section>
 										<span class="icon featured fa fa-check"></span>
@@ -163,6 +176,75 @@
 
                         </section>
 					<!-- Three -->
+
+						<section class="wrapper style1 container special">
+
+							<header class="major">
+								<h2>Next look at this <strong>Pricing Table</strong></h2>
+							</header>
+
+							<div class="row pricing-table">
+								<div class="4u 12u(narrower) plan">
+									<section>
+										<header>
+											<h3>Enterprise<span>$59</span></h3>
+										</header>
+										<a class="signup" href="">Sign up</a>
+										<ul>
+											<li><b>10GB</b> Disk Space</li>
+											<li><b>100GB</b> Monthly Bandwidth</li>
+											<li><b>20</b> Email Accounts</li>
+											<li><b>Unlimited</b> subdomains</li>
+										</ul>
+									</section>
+
+								</div>
+								<div class="4u 12u(narrower) plan  most-popular">
+									<section>
+										<header>
+											<h3>Professional<span>$29</span></h3>
+										</header>
+										<a class="signup" href="">Sign up</a>
+										<ul>
+											<li><b>5GB</b> Disk Space</li>
+											<li><b>50GB</b> Monthly Bandwidth</li>
+											<li><b>10</b> Email Accounts</li>
+											<li><b>Unlimited</b> subdomains</li>
+										</ul>
+									</section>
+
+								</div>
+							
+								<div class="4u 12u(narrower) plan">
+
+									<section>
+										
+										<header>
+											 <h3>Standard<span>$17</span></h3>
+										</header>
+										<a class="signup" href="">Sign up</a>
+										<ul>
+											<li><b>3GB</b> Disk Space</li>
+											<li><b>25GB</b> Monthly Bandwidth</li>
+											<li><b>5</b> Email Accounts</li>
+											<li><b>Unlimited</b> subdomains</li>
+										</ul>
+									</section>
+
+								</div>
+								
+							</div>
+
+							<footer class="major">
+								<ul class="buttons">
+									<li><a href="#" class="button">See More</a></li>
+								</ul>
+							</footer>
+
+						</section>
+
+
+
 						<section class="wrapper style3 container special">
 
 							<header class="major">
@@ -217,6 +299,93 @@
 
 								</div>
 								
+							</div>
+
+							<footer class="major">
+								<ul class="buttons">
+									<li><a href="#" class="button">See More</a></li>
+								</ul>
+							</footer>
+
+						</section>
+
+						<section class="wrapper style3 container special">
+
+							<header class="major">
+								<h2>Odd & Even</h2>
+							</header>
+
+							<div class="row">
+								<div class="6u 12u(narrower)">
+
+									<section>
+										
+										<header>
+											<h3>Odd</h3>
+										</header>
+										<ul class='odd'>
+											<li>even</li>
+											<li>odd</li>
+											<li>even</li>
+											<li>odd</li>
+											<li>even</li>
+										</ul>
+									</section>
+
+								</div>
+								<div class="6u 12u(narrower)">
+
+									<section>
+										
+										<header>
+											<h3>Even</h3>
+										</header>
+										<ul class='even'>
+											<li>even</li>
+											<li>odd</li>
+											<li>even</li>
+											<li>odd</li>
+											<li>even</li>
+										</ul>
+									</section>
+
+								</div>
+							</div>
+							<div class="row">
+								<div class="6u 12u(narrower)">
+
+									<section>
+										
+										<header>
+											<h3>Number</h3>
+										</header>
+										<ul class='number'>
+											<li>even</li>
+											<li>odd</li>
+											<li>even</li>
+											<li>odd</li>
+											<li>even</li>
+										</ul>
+									</section>
+
+								</div>
+								<div class="6u 12u(narrower)">
+
+									<section>
+										
+										<header>
+											<h3>an+b</h3>
+										</header>
+										<ul class='expression'>
+											<li>even</li>
+											<li>odd</li>
+											<li>even</li>
+											<li>odd</li>
+											<li>even</li>
+										</ul>
+									</section>
+
+								</div>
 							</div>
 
 							<footer class="major">
