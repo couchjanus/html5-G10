@@ -1,0 +1,42 @@
+/* Header Styles */
+
+.rwd-table {
+  margin: 1em 0;
+  min-width: 300px;
+}
+.rwd-table tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.rwd-table th {
+  display: none;
+}
+.rwd-table td {
+  display: block;
+}
+
+/* 
+  CSS псевдо-класс :first-child 
+  находит любой элемент, 
+  являющийся первым в своём родителе.
+*/
+.rwd-table td:first-child {
+  padding-top: .5em;
+}
+
+/*
+  CSS псевдо-класс :last-child 
+  находит любой элемент, 
+  являющийся последним в его родителе.
+*/
+.rwd-table td:last-child {
+  padding-bottom: .5em;
+}
+
+/**/
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 6.5em;
+  display: inline-block;
+}
