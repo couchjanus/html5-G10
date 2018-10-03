@@ -1,0 +1,27 @@
+.wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@keyframes changeBackgroundColor {
+    from {
+        background-color: red;
+    }
+    50% {
+        background-color: yellow;
+        transform: translateY(50px);
+    }
+    to {
+        background-color: green;
+        transform: translateY(100px);
+    }
+}
+
+.box {
+    background: red;
+    background-size: cover;
+    padding: 10em 5em;
+    text-align: center;
+    animation:changeBackgroundColor 11s infinite;
+    -webkit-animation:changeBackgroundColor 11s infinite;
+}
